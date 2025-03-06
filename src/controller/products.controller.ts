@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { Product } from "../types/product";
-import { productModel } from "../modal/products.modal";
+import { productModel } from "../model/products.model";
 
 function getProduct(req: Request, res: Response) {
   const product = productModel.getProduct();
